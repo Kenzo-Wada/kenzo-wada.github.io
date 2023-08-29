@@ -1,13 +1,22 @@
 import { globalStyle } from '@vanilla-extract/css';
 
+const bgColor = '#F4F5F7';
+const gridColor = '#E3E4E6'; 
+
 globalStyle('html', {
   backgroundImage: `
-    repeating-linear-gradient(to bottom, #F7FAFC, #F7FAFC 1px, transparent 1px, transparent 24px),
-    repeating-linear-gradient(to right, #F7FAFC, #F7FAFC 1px, transparent 1px, transparent 24px)
+    repeating-linear-gradient(to bottom, ${gridColor}, ${gridColor} 1px, transparent 1px, transparent 24px),
+    repeating-linear-gradient(to right, ${gridColor}, ${gridColor} 1px, transparent 1px, transparent 24px)
   `,
   backgroundSize: '24px 24px',
+  backgroundColor: `${bgColor}`,
+  margin: '24px'
 });
 
-globalStyle('body,main', {
-  backgroundColor: 'transparent !important',
+globalStyle('body, body *', {
+  color: '#252525',
 });
+
+globalStyle('button', {
+  cursor: 'pointer'
+})

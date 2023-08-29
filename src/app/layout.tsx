@@ -6,6 +6,8 @@ import type { Metadata } from 'next';
 import { Caveat } from 'next/font/google';
 import type { ReactNode } from 'react';
 
+import { Header } from '~/app/Header';
+
 interface Props {
   children: ReactNode;
 }
@@ -23,7 +25,10 @@ const RootLayout = (props: Props) => {
   return (
     <html lang="en">
       <body className={font.className}>
-        <Theme>{children}</Theme>
+        <Theme radius='large' hasBackground={false}>
+          <Header />
+          {children}
+        </Theme>
       </body>
     </html>
   );

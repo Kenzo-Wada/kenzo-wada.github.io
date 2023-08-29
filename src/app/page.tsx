@@ -1,9 +1,11 @@
-import { Text } from '@radix-ui/themes';
+import type { NextPage } from "next";
 
-const TopPage = () => {
+import { Eyecatch } from '~/app/Eyecatch'
+
+const TopPage: NextPage = () => {
   return (
     <main>
-      <Text>Hello World!</Text>
+      <Eyecatch />
     </main>
   );
 };
