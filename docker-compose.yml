@@ -1,11 +1,11 @@
 version: "3"
 services:
   app:
-    build:
-      context: .
+    build: .
     tty: true
     volumes:
       - .:/app
-    command: sh -c "npm run dev"
+      - /app/node_modules
+    command: sh -c "pnpm dev"
     ports:
       - "3000:3000"

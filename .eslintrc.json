@@ -1,3 +1,50 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["import", "@typescript-eslint", "react", "no-relative-import-paths"],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "no-relative-import-paths/no-relative-import-paths": [
+      "error",
+      {
+        "allowSameFolder": false,
+        "rootDir": "~/"
+      }
+    ],
+    "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true }],
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", ["sibling", "parent"], "object"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": ".*/UI/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "./*.module.css",
+            "group": "index",
+            "position": "after"
+          }
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
 }
