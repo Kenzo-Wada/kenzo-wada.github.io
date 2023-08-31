@@ -1,7 +1,7 @@
 import { globalStyle } from '@vanilla-extract/css';
 
 const bgColor = '#F4F5F7';
-const gridColor = '#E3E4E6'; 
+const gridColor = '#E3E4E6';
 
 globalStyle('html', {
   backgroundImage: `
@@ -10,13 +10,10 @@ globalStyle('html', {
   `,
   backgroundSize: '24px 24px',
   backgroundColor: `${bgColor}`,
-  margin: '24px'
+  margin: '24px',
+  cursor: 'none',
 });
 
 globalStyle('body, body *', {
   color: '#252525',
 });
-
-globalStyle('button', {
-  cursor: 'pointer'
-})

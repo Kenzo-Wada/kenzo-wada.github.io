@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import { Caveat } from 'next/font/google';
 import type { ReactNode } from 'react';
 
+import { Cursor } from '~/app/Cursor';
 import { Header } from '~/app/Header';
 
 interface Props {
@@ -25,7 +26,8 @@ const RootLayout = (props: Props) => {
   return (
     <html lang="en">
       <body className={font.className}>
-        <Theme radius='large' hasBackground={false}>
+        <Cursor />
+        <Theme radius="large" hasBackground={false}>
           <Header />
           {children}
         </Theme>
