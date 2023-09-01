@@ -5,7 +5,7 @@ import * as style from '~/app/Header/header.css';
 
 export const Header: FC = () => {
   return (
-    <Box className={style.wrapper}>
+    <Box className={style.wrapper} position={'sticky'} p={'3'}>
       <Flex display={'flex'} align={'center'} justify={'between'}>
         <Text weight={'bold'} size={'6'}>
           {"Kenzo's Portfolio"}
