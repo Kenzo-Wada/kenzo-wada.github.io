@@ -4,7 +4,7 @@ import type { FC } from 'react';
 export const Skills: FC = () => {
   return (
     <Flex direction={'column'} gap={'6'} mt={'9'}>
-      <Container>
+      <Container id='skills'>
         <Flex display={'flex'} justify={'center'}>
           <Text weight={'bold'} size={'9'}>
             # Skills.
