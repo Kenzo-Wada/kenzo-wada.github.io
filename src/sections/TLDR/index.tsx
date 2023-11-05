@@ -11,7 +11,7 @@ const Tldr = () => {
         <Text size="6">
           - Three years of engineering experience, fresh out of college in my first year. Super young, but skilled.
         </Text>
-        <Text size="6">- Surprisingly friendly, yet powerful.</Text>
+        <Text size="6">- Super friendly, yet powerful.</Text>
       </Flex>
     </SectionLayout>
   );

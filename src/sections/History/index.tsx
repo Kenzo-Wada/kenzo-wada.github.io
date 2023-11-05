@@ -62,7 +62,9 @@ const History = () => {
         {HistoryData.map((history, index) => (
           <Flex direction={'column'} gap={'1'} key={index}>
             <>
-              <Text size={'7'}>[ {history.year} ]</Text>
+              <Text size={'7'} weight={'bold'}>
+                [ {history.year} ]
+              </Text>
               {history.description.map((description, index) => (
                 <Text size={'6'} key={index}>
                   - {description}
