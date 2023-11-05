@@ -49,7 +49,7 @@ const HistoryData = [
   },
   {
     year: '2023 - now',
-    description: ['Working at LY Corp. as a Frontend Engineer.'],
+    description: ['Working at LY Corp. as a Frontend Engineer.', ['Creating Yahoo! Auction using Next.js and Nest.js']],
     link: 'LY Corp.',
     url: 'https://www.lycorp.co.jp/ja/',
   },
