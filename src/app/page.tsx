@@ -1,16 +1,9 @@
 import type { NextPage } from 'next';
-import dynamic from 'next/dynamic';
 
-const Eyecatch = dynamic(() => import('~/sections/Eyecatch'));
-const Skills = dynamic(() => import('~/sections/Skill'));
+import { MainTemplate } from '~/templates/RootTemplate';
 
 const TopPage: NextPage = () => {
-  return (
-    <main>
-      <Eyecatch />
-      <Skills />
-    </main>
-  );
+  return <MainTemplate />;
 };
 
 export default TopPage;

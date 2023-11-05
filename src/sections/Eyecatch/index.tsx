@@ -16,7 +16,7 @@ const Eyecatch = () => {
         <Container>
           <Flex gap={'6'}>
             <Button size={'4'} variant="outline" className={style.OutlinedButton}>
-              ❤️ about me
+              😺 Github
             </Button>
             <Button size={'4'} className={style.FilledButton}>
               🤝 Contact Me!!
