@@ -24,7 +24,7 @@ const Eyecatch = () => {
             </Link>
             <Link href={'https://twitter.com/unblockscrime'}>
               <Button size={'4'} className={style.FilledButton}>
-                🤝 Contact Me!!
+                🤝 Contact Me
               </Button>
             </Link>
           </Flex>
