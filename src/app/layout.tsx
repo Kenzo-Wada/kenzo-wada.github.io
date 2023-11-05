@@ -3,11 +3,12 @@ import '@radix-ui/themes/styles.css';
 import '~/styles/globalStyles.css';
 import '~/styles/theme-config.css';
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Caveat } from 'next/font/google';
 import type { ReactNode } from 'react';
 
-import { Cursor } from '~/app/Cursor';
-import { Header } from '~/app/Header';
+import { Cursor } from '~/components/Cursor';
+const Header = dynamic(() => import('~/components/Header'));
 
 interface Props {
   children: ReactNode;

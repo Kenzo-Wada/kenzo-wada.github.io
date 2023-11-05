@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
 
-import { Eyecatch } from '~/app/Eyecatch';
-import { Skills } from '~/app/Skill';
-
+const Eyecatch = dynamic(() => import('~/sections/Eyecatch'));
+const Skills = dynamic(() => import('~/sections/Skill'));
 
 const TopPage: NextPage = () => {
   return (
