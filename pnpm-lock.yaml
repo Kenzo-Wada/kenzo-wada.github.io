@@ -98,8 +98,8 @@ devDependencies:
     specifier: ^1.5.2
     version: 1.5.2
   eslint-plugin-storybook:
-    specifier: ^0.6.13
-    version: 0.6.13(eslint@8.48.0)(typescript@5.2.2)
+    specifier: ^0.8.0
+    version: 0.8.0(eslint@8.48.0)(typescript@5.2.2)
   prettier:
     specifier: ^3.0.2
     version: 3.0.2
@@ -4553,8 +4553,6 @@ packages:
     peerDependenciesMeta:
       '@next/font':
         optional: true
-      '@storybook/addon-actions':
-        optional: true
       typescript:
         optional: true
       webpack:
@@ -7985,9 +7983,9 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: true
 
-  /eslint-plugin-storybook@0.6.13(eslint@8.48.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-smd+CS0WH1jBqUEJ3znGS7DU4ayBE9z6lkQAK2yrSUv1+rq8BT/tiI5C/rKE7rmiqiAfojtNYZRhzo5HrulccQ==}
-    engines: {node: 12.x || 14.x || >= 16}
+  /eslint-plugin-storybook@0.8.0(eslint@8.48.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-CZeVO5EzmPY7qghO2t64oaFM+8FTaD4uzOEjHKp516exyTKo+skKAL9GI3QALS2BXhyALJjNtwbmr1XinGE8bA==}
+    engines: {node: '>= 18'}
     peerDependencies:
       eslint: '>=6'
     dependencies:
