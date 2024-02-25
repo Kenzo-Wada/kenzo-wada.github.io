@@ -22,7 +22,7 @@ dependencies:
     version: 18.2.0
   react-animated-cursor:
     specifier: ^2.8.1
-    version: 2.8.1(react-dom@18.2.0)(react@18.2.0)
+    version: 2.11.2(react-dom@18.2.0)(react@18.2.0)
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
@@ -4552,8 +4552,6 @@ packages:
       webpack: ^5.0.0
     peerDependenciesMeta:
       '@next/font':
-        optional: true
-      '@storybook/addon-actions':
         optional: true
       typescript:
         optional: true
@@ -11152,8 +11150,8 @@ packages:
       unpipe: 1.0.0
     dev: true
 
-  /react-animated-cursor@2.8.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-cCYgR1m5AdK69eJROxTGMZrRLrvOY7KhZSHLFUlG3IFW88+JTXMfv91y/uyFugF10w2oPrkWUXOFaTj8rXYMWA==}
+  /react-animated-cursor@2.11.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-LV0PtST61tdeW/chCqFt1JLp6i0d5fD9v2uradBcPAkKKCi2Iw7sAcD11ADS1TjXPPj9MOoD9YubEt++/IbZ+g==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
